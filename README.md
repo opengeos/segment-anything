@@ -22,7 +22,7 @@ The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8
 Install Segment Anything:
 
 ```
-pip install git+https://github.com/facebookresearch/segment-anything.git
+pip install segment-anything-py
 ```
 
 or clone the repository locally and install with
