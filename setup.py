@@ -25,7 +25,7 @@ setup(
     description="An unofficial Python package for Meta AI's Segment Anything Model",
     url="https://github.com/opengeos/segment-anything",
     name="segment-anything-py",
-    version="0.7",
+    version="0.8",
     install_requires=["torch>=1.7", "torchvision>=0.8"],
     license="MIT license",
     long_description=readme,
