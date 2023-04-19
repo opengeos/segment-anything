@@ -1,5 +1,10 @@
 # Segment Anything
 
+[![image](https://img.shields.io/pypi/v/segment-anything-py.svg)](https://pypi.python.org/pypi/segment-anything-py)
+[![image](https://img.shields.io/conda/vn/conda-forge/segment-anything.svg)](https://anaconda.org/conda-forge/segment-anything)
+[![Conda Recipe](https://img.shields.io/badge/recipe-segment--anything-green.svg)](https://anaconda.org/conda-forge/segment-anything)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/segment-anything.svg)](https://anaconda.org/conda-forge/segment-anything)
+
 **[Meta AI Research, FAIR](https://ai.facebook.com/research/)**
 
 [Alexander Kirillov](https://alexander-kirillov.github.io/), [Eric Mintun](https://ericmintun.github.io/), [Nikhila Ravi](https://nikhilaravi.com/), [Hanzi Mao](https://hanzimao.me/), Chloe Rolland, Laura Gustafson, [Tete Xiao](https://tetexiao.com), [Spencer Whitehead](https://www.spencerwhitehead.com/), Alex Berg, Wan-Yen Lo, [Piotr Dollar](https://pdollar.github.io/), [Ross Girshick](https://www.rossgirshick.info/)
@@ -19,17 +24,22 @@ The **Segment Anything Model (SAM)** produces high quality object masks from inp
 
 The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
 
-Install Segment Anything:
+Install Segment Anything using pip:
 
-```
+```bash
 pip install segment-anything-py
+```
+
+or install Segment Anything using mamba:
+
+```bash
+mamba install -c conda-forge segment-anything
 ```
 
 or clone the repository locally and install with
 
-```
-git clone git@github.com:facebookresearch/segment-anything.git
-cd segment-anything; pip install -e .
+```bash
+pip install git+https://github.com/facebookresearch/segment-anything.git
 ```
 
 The following optional dependencies are necessary for mask post-processing, saving masks in COCO format, the example notebooks, and exporting the model in ONNX format. `jupyter` is also required to run the example notebooks.
