@@ -20,6 +20,10 @@ The **Segment Anything Model (SAM)** produces high quality object masks from inp
   <img src="https://raw.githubusercontent.com/opengeos/segment-anything/pypi/assets/masks2.jpg?raw=true" width="61.5%" /> 
 </p>
 
+## Disclaimer
+
+I am not the author of the original implementation. This repository is a Python package that wraps the original implementation into a package. If you have any questions about the original implementation, please refer to the [facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything). The original implementation is licensed under the Apache License, Version 2.0.
+
 ## Installation
 
 The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please follow the instructions [here](https://pytorch.org/get-started/locally/) to install both PyTorch and TorchVision dependencies. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
@@ -74,7 +78,6 @@ Additionally, masks can be generated for images from the command line:
 ```
 python scripts/amg.py --checkpoint <path/to/checkpoint> --model-type <model_type> --input <image_or_folder> --output <path/to/output>
 ```
-
 
 See the examples notebooks on [using SAM with prompts](https://github.com/opengeos/segment-anything/blob/pypi/notebooks/predictor_example.ipynb) and [automatically generating masks](https://github.com/opengeos/segment-anything/blob/pypi/notebooks/automatic_mask_generator_example.ipynb) for more details.
 

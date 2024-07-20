@@ -15,7 +15,7 @@ setup(
     python_requires=">=3.8",
     classifiers=[
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache Software License",
         "Natural Language :: English",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
@@ -27,7 +27,7 @@ setup(
     name="segment-anything-py",
     version="1.0",
     install_requires=["torch>=1.7", "torchvision>=0.8"],
-    license="MIT license",
+    license="Apache Software License 2.0",
     long_description=readme,
     long_description_content_type="text/markdown",
     packages=find_packages(exclude="notebooks"),
